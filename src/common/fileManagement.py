@@ -27,13 +27,13 @@ def sayHello():
 #     print('Records Exported:',len(mylist),'records' )
 #     print(current_time, 'Exported file:',completeName,overwriteStatus,)
 
-# def JSONImport(fileName): 
-#     completeName = os.path.join(save_path, fileName) 
-#     print(current_time,'Imported file:',completeName) 
-#     with open(completeName) as f:
-#         result = json.load(f)
-#     return result 
-def JSONImportEnv(envVar): 
+def JSONImport(fileName,save_path): 
+    completeName = os.path.join(save_path, fileName) 
+    print(current_time,'Imported file:',completeName) 
+    with open(completeName) as f:
+        result = json.load(f)
+    return result 
+def JSONImportEnv(envVar,env_path): 
     fileName = 'env.json'
     completeName = os.path.join(env_path, fileName) 
     print(current_time,'Imported Env:',completeName) 
