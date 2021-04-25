@@ -9,7 +9,7 @@ def cntPagedData(pagedData):
 
 # DATA QUALITY (DATAFRAME)
 def cnt(dataframe):
-    result  = len(df.index)
+    result  = len(dataframe.index)
     print('Nbr Rows:                ',result)
     return result
 def cntDistinct(dataframe,col):
